@@ -64,7 +64,7 @@ PC用のスタイル
     display: none;
   }
 
-  #nav-pc {
+  #nav-sp {
     display: none;
   }
 }
@@ -72,12 +72,13 @@ PC用のスタイル
 /*====================
    スマートフォン用のスタイル
   =====================*/
-  @media screen and (min-width: 375px) {
+
+  @media screen and (max-width: 767px) {
     body {
       margin: 0;
+      min-width: 375px
     }
-
-    /* PC用ナビゲーションを非表示に */
+  /* pc用ナビゲーション非表示 */
     #nav-pc {
       display: none;
     }
